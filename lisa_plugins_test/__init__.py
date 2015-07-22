@@ -5,12 +5,15 @@ class TestPlugin(PluginBase):
     def __init__(self):
         pass
 
+    def get_version(self):
+        return __version__
+
     def add_intents(self):
         from lisa_api.api.models import Intent
 
 
 __title__ = 'Lisa Plugins Test'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __author__ = 'Julien Syx'
 __license__ = 'Apache'
 __copyright__ = 'Copyright 2015 Julien Syx'
